@@ -7,13 +7,15 @@ import Pricing from "./components/Pricing";
 
 export default () => {
   return (
-    <StylesProvider>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/pricing" component={Pricing} />
-          <Route path="/" component={Landing} />
-        </Switch>
-      </BrowserRouter>
-    </StylesProvider>
+    <div>
+      <StylesProvider>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/pricing" component={Pricing} />
+            <Route path="/" component={Landing} />
+          </Switch>
+        </BrowserRouter>
+      </StylesProvider>
+    </div>
   );
 };
